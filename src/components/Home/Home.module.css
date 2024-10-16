@@ -38,6 +38,7 @@ h2 {
   h2 {
     font-size: 20px; /* Reduce el tamaño del título en celulares */
     margin-bottom: 40px; /* Menos espacio entre el título y el botón */
+    color: blue;
   }
 
   .addButton {
@@ -52,6 +53,7 @@ h2 {
   h2 {
     font-size: 24px; /* Ajusta el tamaño del título en tablets */
     margin-bottom: 60px; /* Espacio moderado entre el título y el botón */
+    color: cadetblue;
   }
 
   .addButton {
