@@ -1,0 +1,92 @@
+.dishesList {
+  display: flex; /* Usa flexbox para organizar los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.dishBox {
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 250px; /* Ancho fijo de cada caja */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  text-align: center; /* Centra el texto */
+}
+
+.detailsButton,
+.deleteButton {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor */
+  background-color: white; /* Fondo blanco */
+  color: #333; /* Color del texto */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-top: 10px; /* Espacio superior */
+  transition: background-color 0.3s; /* Animación para cambio de color */
+}
+
+.detailsButton:hover,
+.deleteButton:hover {
+  background-color: #f5f5f5; /* Cambia el fondo  */
+}
+
+/*  para celulares */
+@media only screen and (max-width: 600px) {
+  .dishesList {
+    padding: 10px;
+    max-width: 100%; 
+  }
+
+  
+
+  .dishName {
+    font-size: 18px; /* Reduce el tamaño del título */
+    margin-bottom: 10px; /* Espacio entre el título y el botón */
+  }
+
+  .detailsButton,
+  .deleteButton {
+    width: 100%; /* El botón ocupa todo el ancho  */
+    text-align: center; /* Centra el texto del botón */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 8px 16px; /* Espaciado interno reducido */
+  }
+}
+
+/*  para tablets */
+@media only screen and (max-width: 768px) {
+  .dishesList {
+    padding: 15px; /* Espaciado interno moderado */
+    max-width: 90%; /* Ajusta el ancho en tablets */
+  }
+
+  .dishName {
+    font-size: 22px; /* Tamaño del título adaptado para tablets */
+  }
+
+  .detailsButton,
+  .deleteButton {
+    font-size: 16px; /* Tamaño del texto en el botón */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+}
+
+/* Para pantallas grandes () */
+@media only screen and (min-width: 769px) {
+  .dishesList {
+    max-width: 1000px; /* Ancho máximo para pantallas grandes */
+  }
+
+  .dishName {
+    font-size: 24px; /* Tamaño del título más grande */
+  }
+
+  .detailsButton,
+  .deleteButton {
+    font-size: 18px; /* Tamaño de fuente más grande en el botón */
+    padding: 12px 24px; /* Espaciado interno mayor */
+  }
+}
